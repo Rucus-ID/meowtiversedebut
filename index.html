@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LIVE RUCUS - REDEBUT SHOWCASE PRESENTATION 2026</title>
 
-  <!-- ========================================================================== -->
-  <!-- CDN LIBRARIES: BOOTSTRAP 5, FONTAWESOME, GOOGLE FONTS, GSAP + SCROLLTRIGGER -->
-  <!-- ========================================================================== -->
+  <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome 6 Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
@@ -18,11 +18,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Fredoka:wght@300..700&family=Press+Start+2P&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
 
   <style>
-    /* ==========================================================================
-       [BRIGHT & FESTIVE LIGHT MODE DESIGN SYSTEM - PALET BANNER RUCUS]
-       ========================================================================== */
     :root {
-      /* 1. PALET WARNA RESMI BANNER RUCUS */
       --c-blue-bell: #3F8EC6;
       --c-steel-blue: #5DA4D4;
       --c-sky-reflection: #68B3DB;
@@ -33,170 +29,69 @@
       --c-vanilla-custard: #F7E39F;
       --c-cotton-rose: #FFC5C7;
       --c-white: #FFFFFF;
-
-      /* 2. LIGHT MODE SURFACE & TYPOGRAPHY DESIGN SYSTEM */
       --c-light-bg: #f4f9fd;
       --glass-card-bg: rgba(255, 255, 255, 0.95);
       --glass-card-border: rgba(63, 142, 198, 0.22);
-
-      /* Typography Dark Navy Colors */
       --text-main: #0c2340;
       --text-sub: #1e3e62;
       --text-muted: #507090;
-
-      /* Accents */
-      --accent-primary: var(--c-blue-bell);
-      --accent-secondary: var(--c-steel-blue);
-      --accent-gold: var(--c-vanilla-custard);
-      --accent-rose: var(--c-cotton-rose);
-      --accent-icy: var(--c-icy-blue);
-
-      /* Soft Fluffy Shadows */
       --shadow-fluffy: 0 8px 24px rgba(63, 142, 198, 0.12);
       --shadow-hover: 0 12px 30px rgba(63, 142, 198, 0.22);
-
-      /* WARNA BACKGROUND TIAP SECTION */
       --sec-welcome-bg: radial-gradient(circle at 50% 30%, #e6f3fa 0%, #f4f9fd 75%);
-      --sec-lore-bg: linear-gradient(180deg, #f4f9fd 0%, #e1f0f9 50%, #f4f9fd 100%);
       --sec-character-bg: radial-gradient(circle at 20% 50%, #fff5f6 0%, #f4f9fd 85%);
-      --sec-l2d-bg: linear-gradient(180deg, #f4f9fd 0%, #e8f4fc 50%, #f4f9fd 100%);
       --sec-credits-bg: radial-gradient(circle at 80% 40%, #fff9e6 0%, #f4f9fd 85%);
       --sec-identity-bg: linear-gradient(180deg, #f4f9fd 0%, #e4f2fb 50%, #f4f9fd 100%);
       --sec-interests-bg: radial-gradient(circle at 50% 50%, #fdf4f6 0%, #f4f9fd 85%);
       --sec-fanart-bg: linear-gradient(180deg, #f4f9fd 0%, #e6f3fb 50%, #f4f9fd 100%);
     }
 
-    /* Reset Base Styling */
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
-    /* FONT UTAMA WEBSITE */
-    html {
-      scroll-behavior: smooth;
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      background-color: var(--c-light-bg);
-      color: var(--text-main);
-      overflow-x: hidden;
-    }
-
-    body {
-      background-color: var(--c-light-bg);
-      padding-top: 75px;
-      padding-bottom: 65px;
-      position: relative;
-    }
-
-    /* Custom Scrollbar Bright Theme */
+    html { scroll-behavior: smooth; font-family: 'Plus Jakarta Sans', sans-serif; background-color: var(--c-light-bg); color: var(--text-main); overflow-x: hidden; }
+    body { background-color: var(--c-light-bg); padding-top: 75px; padding-bottom: 65px; position: relative; }
     ::-webkit-scrollbar { width: 10px; }
     ::-webkit-scrollbar-track { background: #eef6fc; }
-    ::-webkit-scrollbar-thumb {
-      background: linear-gradient(180deg, var(--c-blue-bell), var(--c-cotton-rose));
-      border-radius: 6px;
-      border: 2px solid #eef6fc;
-    }
+    ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, var(--c-blue-bell), var(--c-cotton-rose)); border-radius: 6px; border: 2px solid #eef6fc; }
 
-    /* TYPOGRAPHY HEADINGS & JUDUL SECTION */
-    h1, h2, h3, h4, h5, .brand-font {
-      font-family: 'Fredoka', sans-serif;
-      letter-spacing: 1px;
-      color: var(--text-main);
-    }
-    h6, .brand-font2 {
-      font-family: 'Times New Roman', serif;
-      letter-spacing: 1px;
-      color: var(--text-main);
-    }
+    h1, h2, h3, h4, h5, .brand-font { font-family: 'Fredoka', sans-serif; letter-spacing: 1px; color: var(--text-main); }
+    h6, .brand-font2 { font-family: 'Times New Roman', serif; letter-spacing: 1px; color: var(--text-main); }
     .font-syne { font-family: 'Syne', sans-serif; }
 
-    /* Utility Text Colors */
     .text-blue-bell { color: var(--c-blue-bell) !important; }
     .text-steel { color: var(--c-steel-blue) !important; }
     .text-custard { color: #b38500 !important; }
     .text-rose { color: #d94b68 !important; }
     .text-navy { color: var(--text-main) !important; }
     .text-sub-navy { color: var(--text-sub) !important; }
-
     .glow-text-blue { text-shadow: 0 4px 15px rgba(63, 142, 198, 0.35); }
     .glow-text-rose { text-shadow: 0 4px 15px rgba(255, 197, 199, 0.6); }
     .glow-text-gold { text-shadow: 0 4px 15px rgba(247, 227, 159, 0.6); }
 
-    /* Logo Container Responsive Styling */
-    .hero-logo-wrapper {
-      max-width: 800px; width: 100%; margin: 0 auto;
-      display: flex; justify-content: center; align-items: center;
-      transition: transform 0.3s ease;
-    }
+    .hero-logo-wrapper { max-width: 800px; width: 100%; margin: 0 auto; display: flex; justify-content: center; align-items: center; transition: transform 0.3s ease; }
     .hero-logo-wrapper:hover { transform: scale(1.05); }
     .hero-logo-img { max-width: 100%; height: auto; object-fit: contain; filter: drop-shadow(0 4px 12px rgba(63, 142, 198, 0.25)); }
 
-    /* Cards Light Mode */
-    .glass-card {
-      background: var(--glass-card-bg);
-      border: 1.5px solid var(--glass-card-border); border-radius: 24px;
-      box-shadow: var(--shadow-fluffy);
-      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-    }
+    .glass-card { background: var(--glass-card-bg); border: 1.5px solid var(--glass-card-border); border-radius: 24px; box-shadow: var(--shadow-fluffy); transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; }
     .glass-card:hover { border-color: var(--c-blue-bell); box-shadow: var(--shadow-hover); }
 
-    /* Buttons Modern Light Theme Rucus */
-    .btn-cyber {
-      position: relative; font-family: 'Orbitron', sans-serif; font-weight: 700;
-      padding: 14px 32px; border-radius: 50px; text-transform: uppercase;
-      letter-spacing: 1.5px; transition: all 0.3s ease; border: none; overflow: hidden; z-index: 1;
-    }
-    .btn-cyber-primary {
-      background: linear-gradient(45deg, var(--c-blue-bell), var(--c-steel-blue));
-      color: var(--c-white); box-shadow: 0 6px 20px rgba(63, 142, 198, 0.35);
-    }
-    .btn-cyber-primary:hover {
-      color: var(--c-white); transform: translateY(-3px) scale(1.03);
-      box-shadow: 0 10px 28px rgba(63, 142, 198, 0.55);
-    }
-
-    .btn-social {
-      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-      padding: 10px 18px; border-radius: 50px; font-family: 'Plus Jakarta Sans', sans-serif;
-      font-weight: 700; font-size: 0.85rem; letter-spacing: 0.5px; text-decoration: none;
-      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); border: none;
-      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-    }
+    .btn-social { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 18px; border-radius: 50px; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.5px; text-decoration: none; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); border: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1); }
     .btn-social:hover { transform: translateY(-3px) scale(1.02); color: #ffffff !important; }
     .btn-social-x { background: linear-gradient(135deg, #14171a, #000000); color: #ffffff !important; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25); }
-    .btn-social-x:hover { background: linear-gradient(135deg, #2b3036, #14171a); box-shadow: 0 8px 22px rgba(0, 0, 0, 0.4); }
     .btn-social-instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: #ffffff !important; box-shadow: 0 4px 15px rgba(214, 41, 118, 0.3); }
-    .btn-social-instagram:hover { background: linear-gradient(45deg, #e6683c, #dc2743, #cc2366, #bc1888, #8a146e); box-shadow: 0 8px 22px rgba(214, 41, 118, 0.5); }
     .btn-social-youtube { background: linear-gradient(135deg, #ff0000, #cc0000); color: #ffffff !important; box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3); }
-    .btn-social-youtube:hover { background: linear-gradient(135deg, #ff3333, #990000); box-shadow: 0 8px 22px rgba(255, 0, 0, 0.5); }
 
-    .creator-sub-card {
-      background: rgba(255, 255, 255, 0.85); border: 1.5px solid var(--c-icy-blue); border-radius: 20px;
-      padding: 24px 20px; height: 100%; display: flex; flex-direction: column;
-      justify-content: space-between; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      box-shadow: 0 6px 16px rgba(63, 142, 198, 0.08);
-    }
-    .creator-sub-card:hover {
-      transform: translateY(-5px); background: #ffffff; border-color: var(--c-blue-bell);
-      box-shadow: 0 12px 28px rgba(63, 142, 198, 0.2);
-    }
+    .creator-sub-card { background: rgba(255, 255, 255, 0.85); border: 1.5px solid var(--c-icy-blue); border-radius: 20px; padding: 24px 20px; height: 100%; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); box-shadow: 0 6px 16px rgba(63, 142, 198, 0.08); }
+    .creator-sub-card:hover { transform: translateY(-5px); background: #ffffff; border-color: var(--c-blue-bell); box-shadow: 0 12px 28px rgba(63, 142, 198, 0.2); }
 
-    .presentation-section {
-      position: relative; min-height: calc(100vh - 75px); width: 100%;
-      padding: 80px 20px; display: flex; align-items: center; justify-content: center;
-      overflow: hidden; border-bottom: 1px solid rgba(63, 142, 198, 0.08);
-    }
+    .presentation-section { position: relative; min-height: calc(100vh - 75px); width: 100%; padding: 80px 20px; display: flex; align-items: center; justify-content: center; overflow: hidden; border-bottom: 1px solid rgba(63, 142, 198, 0.08); }
 
-    /* Header Section */
-    .glass-header {
-      background: rgba(255, 255, 255, 0.95); border-bottom: 1px solid rgba(63, 142, 198, 0.2);
-      z-index: 1050; box-shadow: 0 4px 20px rgba(63, 142, 198, 0.12);
-    }
+    .glass-header { background: rgba(255, 255, 255, 0.95); border-bottom: 1px solid rgba(63, 142, 198, 0.2); z-index: 1050; box-shadow: 0 4px 20px rgba(63, 142, 198, 0.12); }
     .header-logo { max-height: 44px; width: auto; object-fit: contain; border-radius: 10px; box-shadow: 0 3px 10px rgba(63, 142, 198, 0.25); transition: transform 0.3s ease; }
     .header-logo:hover { transform: scale(1.05); }
 
     .scroll-progress-container { position: absolute; bottom: 0; left: 0; width: 100%; height: 4px; background: rgba(63, 142, 198, 0.1); }
     .scroll-progress-bar { height: 100%; width: 0%; background: linear-gradient(90deg, var(--c-blue-bell), var(--c-steel-blue), var(--c-cotton-rose), var(--c-vanilla-custard)); box-shadow: 0 0 10px var(--c-blue-bell); transition: width 0.1s linear; }
 
-    /* Footer Section */
     .glass-footer { background: rgba(255, 255, 255, 0.95); border-top: 1px solid rgba(63, 142, 198, 0.25); z-index: 1050; height: auto; min-height: 55px; }
     .social-link { color: var(--c-blue-bell); font-size: 1.25rem; transition: all 0.3s ease; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: var(--c-pale-sky); }
     .social-link:hover { color: var(--c-white); background: var(--c-blue-bell); transform: translateY(-3px); box-shadow: 0 6px 14px rgba(63, 142, 198, 0.4); }
@@ -207,10 +102,8 @@
     .support-badge { font-size: 0.75rem; font-weight: 800; color: #b38500; margin-right: 10px; }
     .support-item { display: inline-block; font-size: 0.75rem; font-weight: 700; color: var(--text-main); background: var(--c-pale-sky); padding: 3px 12px; border-radius: 12px; margin-right: 8px; text-decoration: none; border: 1px solid var(--c-icy-blue); transition: all 0.2s ease; }
     .support-item:hover { color: var(--c-white); background: var(--c-blue-bell); border-color: var(--c-blue-bell); box-shadow: 0 4px 10px rgba(63, 142, 198, 0.3); }
-
     @keyframes marquee { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
 
-    /* Hero Section */
     #welcome { min-height: calc(100vh - 75px); background: var(--sec-welcome-bg); display: flex; align-items: center; justify-content: center; text-align: center; position: relative; }
     .hero-video-bg-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; z-index: 0; }
     .hero-video-bg { width: 100%; height: 100%; object-fit: cover; opacity: 0.3; }
@@ -219,7 +112,6 @@
     .giant-typography { font-family: 'Syne', 'Orbitron', sans-serif; font-weight: 900; font-size: clamp(3.2rem, 9.5vw, 7.5rem); line-height: 0.95; letter-spacing: -2px; text-transform: uppercase; background: linear-gradient(135deg, #0c2340 0%, var(--c-blue-bell) 45%, var(--c-steel-blue) 75%, #b38500 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 20px; text-shadow: 0 10px 30px rgba(63, 142, 198, 0.2); }
     .giant-subtext { font-family: 'Orbitron', sans-serif; font-size: clamp(1.1rem, 2.5vw, 1.8rem); font-weight: 700; letter-spacing: 6px; color: var(--c-blue-bell); text-transform: uppercase; margin-bottom: 25px; }
 
-    /* Character & Identity */
     #character { background: var(--sec-character-bg); }
     .char-sheet-frame { width: 100%; height: 460px; object-fit: contain; border-radius: 20px; background: var(--c-white); padding: 8px; border: 2px solid var(--c-pale-sky-2); box-shadow: var(--shadow-fluffy); }
     .color-swatch-box { height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-family: 'Orbitron', sans-serif; font-weight: 700; font-size: 0.75rem; color: #0c2340; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); cursor: pointer; transition: transform 0.2s ease; }
@@ -237,7 +129,6 @@
     .hashtag-card-enhanced:hover { transform: translateY(-5px); box-shadow: 0 12px 28px rgba(63, 142, 198, 0.22); border-color: var(--c-blue-bell); }
     .hashtag-pill-badge { display: inline-flex; align-items: center; gap: 6px; padding: 6px 16px; border-radius: 30px; background: linear-gradient(135deg, var(--c-pale-sky) 0%, var(--c-icy-blue) 100%); border: 1px solid var(--c-steel-blue); color: var(--text-main); font-weight: 800; font-size: 0.88rem; letter-spacing: 0.5px; font-family: 'Orbitron', sans-serif; box-shadow: 0 3px 8px rgba(63, 142, 198, 0.12); }
 
-    /* Interests Table UI */
     #interests { background: var(--sec-interests-bg); }
     .interests-table-card { background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-radius: 24px; border: 2px solid var(--c-icy-blue); box-shadow: var(--shadow-fluffy); overflow: hidden; transition: all 0.3s ease; }
     .interests-table-card:hover { box-shadow: var(--shadow-hover); border-color: var(--c-steel-blue); }
@@ -248,7 +139,6 @@
     .th-category { width: 14%; min-width: 90px; color: var(--text-main); background: linear-gradient(135deg, rgba(203, 236, 251, 0.6) 0%, rgba(225, 240, 249, 0.6) 100%) !important; border-right: 1.5px solid rgba(209, 229, 239, 0.8); }
     .th-likes { width: 43%; min-width: 280px; color: var(--c-blue-bell); background: linear-gradient(135deg, rgba(230, 243, 250, 0.9) 0%, rgba(200, 230, 246, 0.9) 100%) !important; border-right: 1.5px solid rgba(209, 229, 239, 0.8); }
     .th-dislikes { width: 43%; min-width: 280px; color: #d94b68; background: linear-gradient(135deg, rgba(255, 240, 242, 0.9) 0%, rgba(255, 220, 224, 0.9) 100%) !important; }
-    
     .interests-table td.td-category { font-size: 1.8rem; color: var(--text-main); background: rgba(244, 249, 253, 0.7); border-right: 1.5px solid rgba(209, 229, 239, 0.8); vertical-align: middle; text-align: center; padding: 16px; }
     .category-icon-large { font-size: 2rem; display: inline-block; transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
     .interests-table tbody tr:hover .category-icon-large { transform: scale(1.22); }
@@ -256,7 +146,6 @@
     .interests-table td.td-dislikes { vertical-align: top; background: rgba(255, 252, 253, 0.5); }
     .interests-table tbody tr:hover td.td-category { background: rgba(203, 236, 251, 0.45); color: var(--c-blue-bell); }
 
-    /* Tag Styling */
     .tag-container { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
     .tag-pill { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 20px; font-size: 0.84rem; font-weight: 600; line-height: 1.3; transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275); cursor: default; user-select: none; }
     .tag-pill:hover { transform: translateY(-2px) scale(1.03); }
@@ -269,7 +158,6 @@
     .tag-dislike i { color: #d94b68; transition: color 0.25s ease; }
     .tag-dislike:hover i { color: #ffffff; }
 
-    /* Meowtiverse Showcase */
     #meowtiverse-showcase { background: linear-gradient(180deg, #f4f9fd 0%, #e6f3fc 50%, #f4f9fd 100%); }
     .meow-category-wrapper { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
     .meow-category-badge { padding: 10px 20px; border-radius: 30px; background: var(--c-white); border: 1.5px solid var(--c-icy-blue); color: var(--text-main); font-family: 'Orbitron', sans-serif; font-size: 0.82rem; font-weight: 700; cursor: pointer; box-shadow: 0 4px 12px rgba(63, 142, 198, 0.1); transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); display: inline-flex; align-items: center; gap: 8px; }
@@ -282,7 +170,6 @@
     .meow-card-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
     .meow-showcase-card:hover .meow-card-img { transform: scale(1.08); }
 
-    /* Credits & Marquee */
     #credits { background: var(--sec-credits-bg); }
     .creator-work-frame { width: 100%; height: 360px; object-fit: cover; border-radius: 20px; border: 2px solid var(--c-pale-sky-2); box-shadow: var(--shadow-fluffy); }
     .creator-avatar-circle { width: 70px; height: 70px; border-radius: 50%; object-fit: cover; border: 3px solid var(--c-blue-bell); box-shadow: 0 4px 15px rgba(63, 142, 198, 0.3); }
@@ -301,7 +188,6 @@
     @keyframes marqueeLeftToRight { 0% { transform: translate3d(-50%, 0, 0); } 100% { transform: translate3d(0%, 0, 0); } }
     @keyframes marqueeRightToLeft { 0% { transform: translate3d(0%, 0, 0); } 100% { transform: translate3d(-50%, 0, 0); } }
 
-    /* Stage Modals */
     #fanart { background: var(--sec-fanart-bg); height: auto; }
     .fanart-stage-container { position: relative; width: 100%; max-width: 900px; margin: 0 auto; background: var(--c-white); border-radius: 24px; padding: 18px; border: 2px solid var(--c-icy-blue); box-shadow: var(--shadow-hover); }
     .fanart-stage-img-wrapper { min-height: 460px; height: auto; width: 100%; padding: 15px; display: flex; align-items: center; justify-content: center; background: radial-gradient(circle at 50% 50%, #f0f8fd 0%, #e1f0f9 100%); border-radius: 18px; overflow: hidden; }
@@ -313,21 +199,16 @@
     .the-end-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 50% 50%, rgba(244, 249, 253, 0.45) 0%, rgba(230, 243, 250, 0.85) 100%); z-index: 1; }
     .the-end-content-wrapper { position: relative; z-index: 2; }
 
-    /* ==========================================================================
-       MEDIA QUERIES KHUSUS UNTUK TAMPILAN HP (MOBILE LAYOUT FIX)
-       ========================================================================== */
     @media (max-width: 767.98px) {
       .presentation-section { padding: 50px 15px; }
       .giant-typography { font-size: 2.8rem; }
       .marquee-avatar-item { width: 75px; height: 75px; }
 
-      /* [FIX 1] Hashtag Cards Mobile Adjustment */
       .hashtag-card-enhanced { padding: 12px; border-radius: 14px; }
       .hashtag-pill-badge { padding: 4px 10px; font-size: 0.65rem; }
       .hashtag-card-enhanced .desc-text { font-size: 0.65rem !important; line-height: 1.3; }
       .hashtag-card-enhanced .footer-text { font-size: 0.75rem !important; }
 
-      /* [FIX 2] Interests Table -> Mobile Grid Card Mode (Ngekotak) */
       .interests-table-card { border-radius: 16px; border: none; background: transparent; box-shadow: none; }
       .interests-table thead { display: none; }
       .interests-table, .interests-table tbody { display: block; width: 100%; }
@@ -338,7 +219,6 @@
         box-shadow: var(--shadow-fluffy);
       }
       .interests-table td { display: block; padding: 12px; }
-      
       .interests-table td.td-category { 
         width: 100%; text-align: center; border-right: none; 
         border-bottom: 1.5px solid var(--c-icy-blue); 
@@ -350,12 +230,10 @@
         font-family: 'Orbitron', sans-serif; font-size: 1rem; font-weight: 800; color: var(--text-main); 
       }
       .category-icon-large { font-size: 1.4rem; margin-bottom: 0; }
-      
       .interests-table td.td-likes, .interests-table td.td-dislikes { 
         width: 50%; padding: 10px; border-right: none; display: flex; flex-direction: column; 
       }
       .interests-table td.td-likes { border-right: 1.5px solid var(--c-icy-blue); }
-      
       .interests-table td.td-likes::before { 
         content: '❤️ LIKES'; font-family: 'Orbitron', sans-serif; font-weight: 800; color: var(--c-blue-bell); 
         font-size: 0.75rem; text-align: center; margin-bottom: 10px; display: block;
@@ -368,7 +246,6 @@
       .tag-container { flex-direction: column; align-items: stretch; gap: 6px; }
       .tag-pill { justify-content: center; font-size: 0.7rem; padding: 6px; text-align: center; }
 
-      /* [FIX 3] Showcase Categories & Image Grid Layout Mobile */
       .meow-category-wrapper {
         flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; 
         padding-bottom: 12px; margin-bottom: 20px !important;
@@ -378,7 +255,6 @@
       .meow-category-wrapper::-webkit-scrollbar-track { background: var(--c-pale-sky); border-radius: 10px; }
       .meow-category-wrapper::-webkit-scrollbar-thumb { background: var(--c-steel-blue); border-radius: 10px; }
       .meow-category-badge { flex: 0 0 auto; font-size: 0.75rem; padding: 8px 16px; }
-
       .meow-card-img-wrapper { aspect-ratio: 4 / 3; }
       .meow-showcase-card { border-radius: 12px; }
     }
@@ -387,18 +263,13 @@
 
 <body>
 
-  <!-- ========================================================================== -->
-  <!-- HEADER SECTION -->
-  <!-- ========================================================================== -->
   <header class="navbar navbar-expand fixed-top glass-header py-2">
     <div class="container-fluid px-3 px-md-4">
-      <!-- LOGO -->
       <a class="navbar-brand d-flex align-items-center gap-2" href="#welcome">
         <img src="asets/ShinyBadges.png" alt="Logo Live Rucus" id="liveRucusLogo" class="header-logo">
         <span class="logo-text d-none d-sm-inline text-blue-bell brand-font fs-6 fw-bold">Rucus ID</span>
       </a>
 
-      <!-- SUPPORT TICKER (Sembunyi di HP) -->
       <div class="marquee-container ms-auto d-none d-md-block">
         <div class="marquee-content">
           <span class="support-badge"><i class="fas fa-heart text-danger me-1"></i> Support Platforms:</span>
@@ -410,7 +281,6 @@
         </div>
       </div>
     </div>
-    <!-- Scroll Progress -->
     <div class="scroll-progress-container">
       <div class="scroll-progress-bar" id="scrollProgressBar"></div>
     </div>
@@ -418,9 +288,6 @@
 
   <main id="mainPresentationContainer">
 
-    <!-- ======================================================================== -->
-    <!-- WELCOME SECTION -->
-    <!-- ======================================================================== -->
     <section id="welcome" class="presentation-section">
       <div class="hero-video-bg-container">
         <video autoplay loop muted playsinline class="hero-video-bg" id="heroBgVideo">
@@ -435,9 +302,6 @@
       </div>
     </section>
 
-    <!-- ======================================================================== -->
-    <!-- LORE CHAR (COMIC) -->
-    <!-- ======================================================================== -->
     <section id="fanart" class="presentation-section">
       <div class="container text-center">
         <div class="mb-4 gsap-fanart-header">
@@ -468,9 +332,6 @@
       </div>
     </section>
 
-    <!-- ======================================================================== -->
-    <!-- CHARACTER SHEET SECTION -->
-    <!-- ======================================================================== -->
     <section id="character" class="presentation-section">
       <div class="container">
         <div class="text-center mb-4 gsap-char-header">
@@ -506,9 +367,6 @@
       </div>
     </section>
 
-    <!-- ======================================================================== -->
-    <!-- IDENTITAS DAN KOMUNITAS SECTION -->
-    <!-- ======================================================================== -->
     <section id="identity" class="presentation-section">
       <div class="container">
         <div class="text-center mb-4 gsap-id-header">
@@ -588,7 +446,6 @@
               </div>
             </div>
 
-            <!-- Hashtag Section Layout Fixed -->
             <div class="glass-card p-4 p-md-5 gsap-id-hashtags">
               <div class="d-flex flex-wrap align-items-center justify-content-between mb-4 border-bottom pb-3 gap-2">
                 <div>
@@ -648,9 +505,6 @@
       </div>
     </section>
 
-    <!-- ======================================================================== -->
-    <!-- INTERESTS SECTION (LIKES VS DISLIKES - FIX MOBILE GRID LAYOUT) -->
-    <!-- ======================================================================== -->
     <section id="interests" class="presentation-section">
       <div class="container">
         <div class="text-center mb-4 gsap-interests-header">
@@ -817,9 +671,6 @@
       </div>
     </section>
 
-    <!-- ======================================================================== -->
-    <!-- UPCOMING CONTENT SHOWCASE SECTION -->
-    <!-- ======================================================================== -->
     <section id="meowtiverse-showcase" class="presentation-section">
       <div class="container">
         <div class="text-center mb-4 gsap-showcase-header">
@@ -851,7 +702,6 @@
           </button>
         </div>
 
-        <!-- KATEGORI: MEOWTIVERSE RETRO -->
         <div class="meow-showcase-grid-panel active" id="showcase-retro">
           <div class="row g-2 g-md-4 justify-content-center">
             <div class="col-lg-4 col-md-6 col-6"><div class="meow-showcase-card h-100"><div class="meow-card-img-wrapper"><img src="https://kresnik258gaming.wordpress.com/wp-content/uploads/2018/05/crash3hintguidehut.jpg" alt="Retro 1" class="meow-card-img"></div></div></div>
@@ -866,7 +716,6 @@
           </div>
         </div>
 
-        <!-- KATEGORI: MEOWTIVERSE CHILL -->
         <div class="meow-showcase-grid-panel" id="showcase-chill">
           <div class="row g-2 g-md-4 justify-content-center">
             <div class="col-lg-4 col-md-6 col-6"><div class="meow-showcase-card h-100"><div class="meow-card-img-wrapper"><img src="https://assets.telkomsel.com/public/2025-05/Apa-Itu-Yapping-Cari-Tau-Istilah-Viral-Ini-biar-Makin-Sigma.jpg?VersionId=_P7ftzbuitpZ2Xgtzx5_3Z3lYZHy6B2Q" alt="Chill 1" class="meow-card-img"></div></div></div>
@@ -881,7 +730,6 @@
           </div>
         </div>
 
-        <!-- KATEGORI: MEOWTIVERSE COMPETITIVE -->
         <div class="meow-showcase-grid-panel" id="showcase-competitive">
           <div class="row g-2 g-md-4 justify-content-center">
             <div class="col-lg-4 col-md-6 col-6"><div class="meow-showcase-card h-100"><div class="meow-card-img-wrapper"><img src="https://www.riotgames.com/darkroom/1440/8d5c497da1c2eeec8cffa99b01abc64b:5329ca773963a5b739e98e715957ab39/ps-f2p-val-console-launch-16x9.jpg" alt="Competitive 1" class="meow-card-img"></div></div></div>
@@ -896,7 +744,6 @@
           </div>
         </div>
 
-        <!-- KATEGORI: MEOWTIVERSE STRATEGY -->
         <div class="meow-showcase-grid-panel" id="showcase-strategy">
           <div class="row g-2 g-md-4 justify-content-center">
             <div class="col-lg-4 col-md-6 col-6"><div class="meow-showcase-card h-100"><div class="meow-card-img-wrapper"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYQ7p2vomn67GJJVS83SH0HW3xL41SgNo6Dud_rf1eYW4CMDCZwipwXKh9&s=10" alt="Strategy 1" class="meow-card-img"></div></div></div>
@@ -911,7 +758,6 @@
           </div>
         </div>
 
-        <!-- KATEGORI: MEOWTIVERSE HORROR -->
         <div class="meow-showcase-grid-panel" id="showcase-horror">
           <div class="row g-2 g-md-4 justify-content-center">
             <div class="col-lg-4 col-md-6 col-6"><div class="meow-showcase-card h-100"><div class="meow-card-img-wrapper"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/381210/capsule_616x353.jpg?t=1787769494" alt="Horror 1" class="meow-card-img"></div></div></div>
@@ -926,7 +772,6 @@
           </div>
         </div>
 
-        <!-- KATEGORI: MEOWTIVERSE RANDOM -->
         <div class="meow-showcase-grid-panel" id="showcase-random">
           <div class="row g-2 g-md-4 justify-content-center">
             <div class="col-lg-4 col-md-6 col-6"><div class="meow-showcase-card h-100"><div class="meow-card-img-wrapper"><img src="https://img.redbull.com/images/c_limit,w_1500,h_1000/f_auto,q_auto/redbullcom/2020/5/7/wfltxlqaqfpcapomdvvm/monster-hunter-world-iceborn" alt="Random 1" class="meow-card-img"></div></div></div>
@@ -941,7 +786,6 @@
           </div>
         </div>
 
-        <!-- KATEGORI: MEOWTIVERSE COLLAB -->
         <div class="meow-showcase-grid-panel" id="showcase-collab">
           <div class="row g-2 g-md-4 justify-content-center">
             <div class="col-lg-4 col-md-6 col-6"><div class="meow-showcase-card h-100"><div class="meow-card-img-wrapper"><img src="https://gameinformer.com/sites/default/files/styles/no_compression/public/legacy-galleries/143532/Verm3.jpg.webp" alt="Collab 1" class="meow-card-img"></div></div></div>
@@ -959,9 +803,6 @@
       </div>
     </section>
 
-    <!-- ======================================================================== -->
-    <!-- CREATOR CREDITS -->
-    <!-- ======================================================================== -->
     <section id="credits" class="presentation-section">
       <div class="container">
         <div class="text-center mb-4 gsap-credits-header">
@@ -971,7 +812,6 @@
 
         <div class="row justify-content-center gy-4">
 
-          <!-- CARD 2: Character Drawing Artist -->
           <div class="glass-card p-4 mb-4 creator-card-full active" id="creatorCard2">
             <div class="d-flex align-items-center justify-content-between mb-4 pb-2 border-bottom border-secondary border-opacity-25">
               <div class="d-flex align-items-center gap-2">
@@ -1001,7 +841,6 @@
             </div>
           </div>
 
-          <!-- CARD 3: Character Cutting Artist -->
           <div class="glass-card p-4 mb-4 creator-card-full active" id="creatorCard3">
             <div class="d-flex align-items-center justify-content-between mb-4 pb-2 border-bottom border-secondary border-opacity-25">
               <div class="d-flex align-items-center gap-2">
@@ -1031,7 +870,6 @@
             </div>
           </div>
 
-          <!-- CARD 4: Character Rigging Artist -->
           <div class="glass-card p-4 mb-4 creator-card-full active" id="creatorCard4">
             <div class="d-flex align-items-center justify-content-between mb-4 pb-2 border-bottom border-secondary border-opacity-25">
               <div class="d-flex align-items-center gap-2">
@@ -1061,7 +899,6 @@
             </div>
           </div>
 
-          <!-- CARD 5: Comic Strip Artist -->
           <div class="glass-card p-4 mb-4 creator-card-full active" id="creatorCard5">
             <div class="d-flex align-items-center justify-content-between mb-4 pb-2 border-bottom border-secondary border-opacity-25">
               <div class="d-flex align-items-center gap-2">
@@ -1073,7 +910,7 @@
               <div class="col-md-5">
                 <div class="creator-sub-card">
                   <div class="d-flex align-items-center gap-3 mb-3">
-                    <img src="asets/Waffle.jpg" alt="Foto Profil Waffle" class="creator-avatar-circle">
+                    <img src="fin/waffle.jpg" alt="Foto Profil Waffle" class="creator-avatar-circle">
                     <div>
                       <span class="badge bg-primary px-3 py-1 mb-1">Comic Strip Artist</span>
                       <h3 class="text-navy fw-bold mb-0">Waffle</h3>
@@ -1091,7 +928,6 @@
             </div>
           </div>
 
-          <!-- CARD 6: Badge Artist -->
           <div class="glass-card p-4 mb-4 creator-card-full active" id="creatorCard6">
             <div class="d-flex align-items-center justify-content-between mb-4 pb-2 border-bottom border-secondary border-opacity-25">
               <div class="d-flex align-items-center gap-2">
@@ -1121,7 +957,6 @@
             </div>
           </div>
 
-          <!-- CARD 7: Sticker Artist -->
           <div class="glass-card p-4 mb-4 creator-card-full active" id="creatorCard7">
             <div class="d-flex align-items-center justify-content-between mb-4 pb-2 border-bottom border-secondary border-opacity-25">
               <div class="d-flex align-items-center gap-2">
@@ -1151,7 +986,6 @@
             </div>
           </div>
 
-          <!-- CARD 8: Logo Artist -->
           <div class="glass-card p-4 mb-4 creator-card-full active" id="creatorCard8">
             <div class="d-flex align-items-center justify-content-between mb-4 pb-2 border-bottom border-secondary border-opacity-25">
               <div class="d-flex align-items-center gap-2">
@@ -1166,7 +1000,7 @@
               <div class="col-md-5">
                 <div class="creator-sub-card">
                   <div class="d-flex align-items-center gap-3 mb-3">
-                    <img src="asets/Rao.png" alt="Foto Profil Rao" class="creator-avatar-circle">
+                    <img src="fin/Rao.png" alt="Foto Profil Rao" class="creator-avatar-circle">
                     <div>
                       <span class="badge bg-primary px-3 py-1 mb-1">Logo & Banner Artist</span>
                       <h3 class="text-navy fw-bold mb-0">Rao</h3>
@@ -1181,7 +1015,6 @@
             </div>
           </div>
 
-          <!-- CARD 9: Transitions Designer -->
           <div class="glass-card p-4 mb-4 creator-card-full active" id="creatorCard9">
             <div class="d-flex align-items-center justify-content-between mb-4 pb-2 border-bottom border-secondary border-opacity-25">
               <div class="d-flex align-items-center gap-2">
@@ -1193,7 +1026,7 @@
               <div class="col-md-5">
                 <div class="creator-sub-card">
                   <div class="d-flex align-items-center gap-3 mb-3">
-                    <img src="asets/Riielism.jpg" alt="Foto Profil riielism" class="creator-avatar-circle">
+                    <img src="fin/Riielism.jpg" alt="Foto Profil riielism" class="creator-avatar-circle">
                     <div>
                       <span class="badge bg-primary px-3 py-1 mb-1">Transitions Designer</span>
                       <h3 class="text-navy fw-bold mb-0">riielism</h3>
@@ -1211,7 +1044,6 @@
             </div>
           </div>
 
-          <!-- CARD 10: Livechat Designer -->
           <div class="glass-card p-4 mb-4 creator-card-full active" id="creatorCard10">
             <div class="d-flex align-items-center justify-content-between mb-4 pb-2 border-bottom border-secondary border-opacity-25">
               <div class="d-flex align-items-center gap-2">
@@ -1256,7 +1088,6 @@
             </div>
           </div>
 
-          <!-- CARD 11: Layout & Assets Designer-->
           <div class="glass-card p-4 mb-4 creator-card-full active" id="creatorCard11">
             <div class="d-flex align-items-center justify-content-between mb-4 pb-2 border-bottom border-secondary border-opacity-25">
               <div class="d-flex align-items-center gap-2">
@@ -1283,7 +1114,7 @@
               <div class="col-md-4">
                 <div class="creator-sub-card">
                   <div class="d-flex align-items-center gap-3 mb-3">
-                    <img src="asets/monge.png" alt="Foto Profil Monge Machiro" class="creator-avatar-circle">
+                    <img src="fin/monge.jpg" alt="Foto Profil Monge Machiro" class="creator-avatar-circle">
                     <div>
                       <span class="badge bg-primary px-3 py-1 mb-1">Layout Designer</span>
                       <h3 class="text-navy fw-bold mb-0">Monge Machiro</h3>
@@ -1313,7 +1144,6 @@
             </div>
           </div>
 
-          <!-- CARD 13: Intro Video  -->
           <div class="glass-card p-4 mb-4 creator-card-full active" id="creatorCard13">
             <div class="d-flex align-items-center justify-content-between mb-4 pb-2 border-bottom border-secondary border-opacity-25">
               <div class="d-flex align-items-center gap-2">
@@ -1343,7 +1173,6 @@
             </div>
           </div>
 
-          <!-- CARD 14: Creative Consultant -->
           <div class="glass-card p-4 mb-4 creator-card-full active" id="creatorCard14">
             <div class="d-flex align-items-center justify-content-between mb-4 pb-2 border-bottom border-secondary border-opacity-25">
               <div class="d-flex align-items-center gap-2">
@@ -1355,7 +1184,7 @@
               <div class="col-md-4">
                 <div class="creator-sub-card">
                   <div class="d-flex align-items-center gap-3 mb-3">
-                    <img src="asets/Rao.png" alt="Foto Profil Rao" class="creator-avatar-circle">
+                    <img src="fin/Rao.png" alt="Foto Profil Rao" class="creator-avatar-circle">
                     <div>
                       <span class="badge bg-primary px-3 py-1 mb-1">Creative Consultant</span>
                       <h3 class="text-navy fw-bold mb-0">Rao</h3>
@@ -1373,7 +1202,7 @@
               <div class="col-md-4">
                 <div class="creator-sub-card">
                   <div class="d-flex align-items-center gap-3 mb-3">
-                    <img src="asets/shun.png" alt="Foto Profil Shun" class="creator-avatar-circle">
+                    <img src="fin/shun.png" alt="Foto Profil Shun" class="creator-avatar-circle">
                     <div>
                       <span class="badge bg-primary px-3 py-1 mb-1">Creative Consultant</span>
                       <h3 class="text-navy fw-bold mb-0">Shun</h3>
@@ -1388,7 +1217,6 @@
             </div>
           </div>
 
-          <!-- CARD 15: Voice Actor & MC -->
           <div class="glass-card p-4 mb-4 creator-card-full active" id="creatorCard15">
             <div class="d-flex align-items-center justify-content-between mb-4 pb-2 border-bottom border-secondary border-opacity-25">
               <div class="d-flex align-items-center gap-2">
@@ -1401,7 +1229,7 @@
                 <div class="creator-sub-card">
                   <div>
                     <div class="d-flex align-items-center gap-3 mb-3">
-                      <img src="asets/Steven Racoon.jpg" alt="Steven Racoon" class="creator-avatar-circle">
+                      <img src="fin/Steven Racoon.jpg" alt="Steven Racoon" class="creator-avatar-circle">
                       <div>
                         <span class="badge bg-primary px-3 py-1 mb-1">MC Opening</span>
                         <h3 class="text-navy fw-bold mb-0 fs-5">Steven Racoon</h3>
@@ -1418,7 +1246,7 @@
                 <div class="creator-sub-card">
                   <div>
                     <div class="d-flex align-items-center gap-3 mb-3">
-                      <img src="asets/Neiva.png" alt="Neiva" class="creator-avatar-circle">
+                      <img src="fin/Neiva.jpg" alt="Neiva" class="creator-avatar-circle">
                       <div>
                         <span class="badge bg-primary px-3 py-1 mb-1">Lore Voice Actor</span>
                         <h3 class="text-navy fw-bold mb-0 fs-5">Neiva</h3>
@@ -1451,7 +1279,6 @@
             </div>
           </div>
 
-          <!-- CARD 16: Music -->
           <div class="glass-card p-4 mb-4 creator-card-full active" id="creatorCard16">
             <div class="d-flex align-items-center justify-content-between mb-4 pb-2 border-bottom border-secondary border-opacity-25">
               <div class="d-flex align-items-center gap-2">
@@ -1496,7 +1323,6 @@
             </div>
           </div>
 
-          <!-- CARD 17: Voice Actor Talents -->
           <div class="glass-card p-4 mb-4 creator-card-full active" id="creatorCard17">
             <div class="d-flex align-items-center justify-content-between mb-4 pb-2 border-bottom border-secondary border-opacity-25">
               <div class="d-flex align-items-center gap-2">
@@ -1559,7 +1385,6 @@
             </div>
           </div>
 
-          <!-- CARD 18: Special Thanks -->
           <div class="glass-card p-4 mb-4 creator-card-full active" id="creatorCard18">
             <div class="d-flex align-items-center justify-content-between mb-3 pb-2 border-bottom border-secondary border-opacity-25">
               <div class="d-flex align-items-center gap-2">
@@ -1567,9 +1392,7 @@
                 <h4 class="text-navy fw-bold mb-0">Special Thanks</h4>
               </div>
             </div>
-            <!-- 4-ROW CONVEYOR BELT CONTAINER -->
             <div class="d-flex flex-column gap-3">
-              <!-- BARIS 1: KIRI KE KANAN -->
               <div class="marquee-card-container">
                 <div class="marquee-card-content marquee-dir-left-to-right">
                   <div class="d-inline-flex gap-3 align-items-center me-3">
@@ -1592,7 +1415,6 @@
                   </div>
                 </div>
               </div>
-              <!-- BARIS 2: KANAN KE KIRI -->
               <div class="marquee-card-container">
                 <div class="marquee-card-content marquee-dir-right-to-left">
                   <div class="d-inline-flex gap-3 align-items-center me-3">
@@ -1615,7 +1437,6 @@
                   </div>
                 </div>
               </div>
-              <!-- BARIS 3: KIRI KE KANAN -->
               <div class="marquee-card-container">
                 <div class="marquee-card-content marquee-dir-left-to-right">
                   <div class="d-inline-flex gap-3 align-items-center me-3">
@@ -1643,13 +1464,9 @@
       </div>
     </section>
 
-    <!-- ======================================================================== -->
-    <!-- THE END -->
-    <!-- ======================================================================== -->
     <section id="the-end" class="presentation-section">
       <div class="the-end-bg-container">
-        <!-- BACKGROUND SUDAH DIGANTI MENJADI END.png -->
-        <img src="asets/END.png" alt="The End Background Image" class="the-end-bg-img" id="theEndBgImg">
+        <img src="asets/ucufwsv2.png" alt="The End Background Image" class="the-end-bg-img" id="theEndBgImg">
         <div class="the-end-overlay"></div>
       </div>
       <div class="container the-end-content-wrapper text-center">
@@ -1662,12 +1479,11 @@
   </main>
 
   <!-- ========================================================================== -->
-  <!-- FOOTER SECTION -->
+  <!-- FOOTER SECTION (DIREVISI) -->
   <!-- ========================================================================== -->
   <footer class="fixed-bottom glass-footer py-2">
-    <!-- FLEX BERUBAH MENJADI JUSTIFY-CONTENT-CENTER -->
-    <div class="container-fluid px-3 px-md-4 d-flex align-items-center justify-content-center flex-wrap">
-      <div class="d-flex align-items-center justify-content-center gap-2 social-icon-group w-100">
+    <div class="container-fluid px-3 px-md-4 d-flex align-items-center justify-content-center justify-content-md-start flex-wrap">
+      <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2 social-icon-group w-100 w-md-auto">
         <a href="#" target="_blank" class="social-link" title="Discord"><i class="fab fa-discord"></i></a>
         <a href="#" target="_blank" class="social-link" title="Twitch"><i class="fab fa-twitch"></i></a>
         <a href="#" target="_blank" class="social-link" title="TikTok"><i class="fab fa-tiktok"></i></a>
@@ -1678,9 +1494,6 @@
     </div>
   </footer>
 
-  <!-- ========================================================================== -->
-  <!-- JAVASCRIPT & GSAP -->
-  <!-- ========================================================================== -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
