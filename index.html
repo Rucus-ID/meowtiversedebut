@@ -525,7 +525,7 @@
       </div>
     </section>
 
-   <section id="interests" class="presentation-section">
+  <section id="interests" class="presentation-section">
       <div class="container">
         <div class="text-center mb-4 gsap-interests-header">
           <h2 class="display-5 fw-bold text-navy glow-text-rose">LIKES & DISLIKES</h2>
@@ -538,8 +538,9 @@
               <thead>
                 <tr>
                   <th class="th-category text-center"><i class="fas fa-list text-steel me-2"></i> KATEGORI</th>
-                  <th class="th-likes text-center"><i class="fas fa-heart text-danger me-2"></i> LIKES</th>
-                  <th class="th-dislikes text-center"><i class="fas fa-heart-broken text-rose me-2"></i> DISLIKES</th>
+                  <!-- Ubah judul kolom menjadi rata kiri dengan text-start -->
+                  <th class="th-likes text-start ps-4"><i class="fas fa-heart text-danger me-2"></i> LIKES</th>
+                  <th class="th-dislikes text-start ps-4"><i class="fas fa-heart-broken text-rose me-2"></i> DISLIKES</th>
                 </tr>
               </thead>
               <tbody>
@@ -548,20 +549,21 @@
                     <i class="fas fa-gamepad text-blue-bell category-icon-large" title="Game"></i>
                   </td>
                   <td class="td-likes">
-                    <div class="tag-container">
-                      <span class="tag-pill tag-like"><i class="fas fa-heart"></i> FPS</span>
-                      <span class="tag-pill tag-like"><i class="fas fa-heart"></i> Fighting games</span>
-                      <span class="tag-pill tag-like"><i class="fas fa-heart"></i> Retro</span>
-                      <span class="tag-pill tag-like"><i class="fas fa-heart"></i> Farming sims</span>
-                      <span class="tag-pill tag-like"><i class="fas fa-heart"></i> RTS</span>
+                    <div class="tag-container justify-content-start">
+                      <!-- Tambah justify-content-start agar text dan icon rata kiri penuh -->
+                      <span class="tag-pill tag-like justify-content-start"><i class="fas fa-heart"></i> FPS</span>
+                      <span class="tag-pill tag-like justify-content-start"><i class="fas fa-heart"></i> Fighting games</span>
+                      <span class="tag-pill tag-like justify-content-start"><i class="fas fa-heart"></i> Retro</span>
+                      <span class="tag-pill tag-like justify-content-start"><i class="fas fa-heart"></i> Farming sims</span>
+                      <span class="tag-pill tag-like justify-content-start"><i class="fas fa-heart"></i> RTS</span>
                     </div>
                   </td>
                   <td class="td-dislikes">
-                    <div class="tag-container">
-                      <span class="tag-pill tag-dislike"><i class="fas fa-heart-broken"></i> Game gacha</span>
-                      <span class="tag-pill tag-dislike"><i class="fas fa-heart-broken"></i> Roguelike</span>
-                      <span class="tag-pill tag-dislike"><i class="fas fa-heart-broken"></i> Roleplay</span>
-                      <span class="tag-pill tag-dislike"><i class="fas fa-heart-broken"></i> MOBA</span>
+                    <div class="tag-container justify-content-start">
+                      <span class="tag-pill tag-dislike justify-content-start"><i class="fas fa-heart-broken"></i> Game gacha</span>
+                      <span class="tag-pill tag-dislike justify-content-start"><i class="fas fa-heart-broken"></i> Roguelike</span>
+                      <span class="tag-pill tag-dislike justify-content-start"><i class="fas fa-heart-broken"></i> Roleplay</span>
+                      <span class="tag-pill tag-dislike justify-content-start"><i class="fas fa-heart-broken"></i> MOBA</span>
                     </div>
                   </td>
                 </tr>
@@ -570,20 +572,20 @@
                     <i class="fas fa-utensils text-custard category-icon-large" title="Food"></i>
                   </td>
                   <td class="td-likes">
-                    <div class="tag-container">
-                      <span class="tag-pill tag-like"><i class="fas fa-heart"></i> Makanan tawar</span>
-                      <span class="tag-pill tag-like"><i class="fas fa-heart"></i> Duren</span>
-                      <span class="tag-pill tag-like"><i class="fas fa-heart"></i> Jeroan</span>
-                      <span class="tag-pill tag-like"><i class="fas fa-heart"></i> Belut</span>
-                      <span class="tag-pill tag-like"><i class="fas fa-heart"></i> Serangga</span>
+                    <div class="tag-container justify-content-start">
+                      <span class="tag-pill tag-like justify-content-start"><i class="fas fa-heart"></i> Makanan tawar</span>
+                      <span class="tag-pill tag-like justify-content-start"><i class="fas fa-heart"></i> Duren</span>
+                      <span class="tag-pill tag-like justify-content-start"><i class="fas fa-heart"></i> Jeroan</span>
+                      <span class="tag-pill tag-like justify-content-start"><i class="fas fa-heart"></i> Belut</span>
+                      <span class="tag-pill tag-like justify-content-start"><i class="fas fa-heart"></i> Serangga</span>
                     </div>
                   </td>
                   <td class="td-dislikes">
-                    <div class="tag-container">
-                      <span class="tag-pill tag-dislike"><i class="fas fa-heart-broken"></i> Sambal</span>
-                      <span class="tag-pill tag-dislike"><i class="fas fa-heart-broken"></i> Kulit ayam</span>
-                      <span class="tag-pill tag-dislike"><i class="fas fa-heart-broken"></i> Shellfish</span>
-                      <span class="tag-pill tag-dislike"><i class="fas fa-heart-broken"></i> Jeruk</span>
+                    <div class="tag-container justify-content-start">
+                      <span class="tag-pill tag-dislike justify-content-start"><i class="fas fa-heart-broken"></i> Sambal</span>
+                      <span class="tag-pill tag-dislike justify-content-start"><i class="fas fa-heart-broken"></i> Kulit ayam</span>
+                      <span class="tag-pill tag-dislike justify-content-start"><i class="fas fa-heart-broken"></i> Shellfish</span>
+                      <span class="tag-pill tag-dislike justify-content-start"><i class="fas fa-heart-broken"></i> Jeruk</span>
                     </div>
                   </td>
                 </tr>
@@ -592,19 +594,19 @@
                     <i class="fas fa-film text-rose category-icon-large" title="Film"></i>
                   </td>
                   <td class="td-likes">
-                    <div class="tag-container">
-                      <span class="tag-pill tag-like"><i class="fas fa-heart"></i> Anime Klasik TV Indo</span>
-                      <span class="tag-pill tag-like"><i class="fas fa-heart"></i> Anime Komedi</span>
-                      <span class="tag-pill tag-like"><i class="fas fa-heart"></i> Jojo Bizzare Adventure Series</span>
-                      <span class="tag-pill tag-like"><i class="fas fa-heart"></i> Star Wars Series</span>
-                      <span class="tag-pill tag-like"><i class="fas fa-heart"></i> Tokusatsu</span>
-                      <span class="tag-pill tag-like"><i class="fas fa-heart"></i> Kaiju</span>
+                    <div class="tag-container justify-content-start">
+                      <span class="tag-pill tag-like justify-content-start"><i class="fas fa-heart"></i> Anime Klasik TV Indo</span>
+                      <span class="tag-pill tag-like justify-content-start"><i class="fas fa-heart"></i> Anime Komedi</span>
+                      <span class="tag-pill tag-like justify-content-start"><i class="fas fa-heart"></i> Jojo Bizzare Adventure Series</span>
+                      <span class="tag-pill tag-like justify-content-start"><i class="fas fa-heart"></i> Star Wars Series</span>
+                      <span class="tag-pill tag-like justify-content-start"><i class="fas fa-heart"></i> Tokusatsu</span>
+                      <span class="tag-pill tag-like justify-content-start"><i class="fas fa-heart"></i> Kaiju</span>
                     </div>
                   </td>
                   <td class="td-dislikes">
-                    <div class="tag-container">
-                      <span class="tag-pill tag-dislike"><i class="fas fa-heart-broken"></i> Film adaptasi dari game</span>
-                      <span class="tag-pill tag-dislike"><i class="fas fa-heart-broken"></i> Film horror adaptasi kisah nyata</span>
+                    <div class="tag-container justify-content-start">
+                      <span class="tag-pill tag-dislike justify-content-start"><i class="fas fa-heart-broken"></i> Film adaptasi dari game</span>
+                      <span class="tag-pill tag-dislike justify-content-start"><i class="fas fa-heart-broken"></i> Film horror adaptasi kisah nyata</span>
                     </div>
                   </td>
                 </tr>
