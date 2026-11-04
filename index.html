@@ -4,17 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- [MODIFIKASI] GANTI JUDUL HALAMAN PRESENTASI DISINI -->
   <title>LIVE RUCUS - REDEBUT SHOWCASE PRESENTATION 2026</title>
 
   <!-- ========================================================================== -->
   <!-- CDN LIBRARIES: BOOTSTRAP 5, FONTAWESOME, GOOGLE FONTS, GSAP + SCROLLTRIGGER -->
   <!-- ========================================================================== -->
-  <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- FontAwesome 6 Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-  <!-- Google Fonts: Orbitron & Plus Jakarta Sans & Syne -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
@@ -333,7 +329,7 @@
 
       /* [FIX 2] Interests Table -> Mobile Grid Card Mode (Ngekotak) */
       .interests-table-card { border-radius: 16px; border: none; background: transparent; box-shadow: none; }
-      .interests-table thead { display: none; } /* Sembunyikan Header Table Asli */
+      .interests-table thead { display: none; }
       .interests-table, .interests-table tbody { display: block; width: 100%; }
       .interests-table tr { 
         display: flex; flex-wrap: wrap; margin-bottom: 20px; 
@@ -343,7 +339,6 @@
       }
       .interests-table td { display: block; padding: 12px; }
       
-      /* Baris Kategori di Atas */
       .interests-table td.td-category { 
         width: 100%; text-align: center; border-right: none; 
         border-bottom: 1.5px solid var(--c-icy-blue); 
@@ -356,13 +351,11 @@
       }
       .category-icon-large { font-size: 1.4rem; margin-bottom: 0; }
       
-      /* Kolom Likes (50%) & Dislikes (50%) Sejajar Kiri-Kanan */
       .interests-table td.td-likes, .interests-table td.td-dislikes { 
         width: 50%; padding: 10px; border-right: none; display: flex; flex-direction: column; 
       }
       .interests-table td.td-likes { border-right: 1.5px solid var(--c-icy-blue); }
       
-      /* Judul Likes & Dislikes per kotak */
       .interests-table td.td-likes::before { 
         content: '❤️ LIKES'; font-family: 'Orbitron', sans-serif; font-weight: 800; color: var(--c-blue-bell); 
         font-size: 0.75rem; text-align: center; margin-bottom: 10px; display: block;
@@ -372,12 +365,10 @@
         font-size: 0.75rem; text-align: center; margin-bottom: 10px; display: block;
       }
       
-      /* Merapikan susunan Tags agar muat di 50% layar */
       .tag-container { flex-direction: column; align-items: stretch; gap: 6px; }
       .tag-pill { justify-content: center; font-size: 0.7rem; padding: 6px; text-align: center; }
 
       /* [FIX 3] Showcase Categories & Image Grid Layout Mobile */
-      /* Tombol Kategori Bisa Digeser (Swipe Horizontal) */
       .meow-category-wrapper {
         flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; 
         padding-bottom: 12px; margin-bottom: 20px !important;
@@ -388,7 +379,6 @@
       .meow-category-wrapper::-webkit-scrollbar-thumb { background: var(--c-steel-blue); border-radius: 10px; }
       .meow-category-badge { flex: 0 0 auto; font-size: 0.75rem; padding: 8px 16px; }
 
-      /* Ukuran Aspect Ratio Thumbnail Game Mobile */
       .meow-card-img-wrapper { aspect-ratio: 4 / 3; }
       .meow-showcase-card { border-radius: 12px; }
     }
@@ -607,7 +597,6 @@
                 <span class="badge bg-blue-bell text-white rounded-pill px-3 py-2 fs-7 fw-bold">4 Official Tags</span>
               </div>
               <div class="row g-2 g-md-4">
-                <!-- Ubah col-sm-6 menjadi col-6 agar fix 2 kolom di mobile -->
                 <div class="col-6 col-lg-3">
                   <div class="hashtag-card-enhanced" onclick="copyHashtag('#RucusLiveID', this)" title="Klik untuk menyalin #RucusLiveID">
                     <div>
@@ -670,7 +659,6 @@
         </div>
 
         <div class="interests-table-card gsap-interests-card">
-          <!-- Menghapus table-responsive karena custom mobile layout CSS akan menangani responsivitas -->
           <div>
             <table class="table interests-table align-middle">
               <thead>
@@ -681,7 +669,6 @@
                 </tr>
               </thead>
               <tbody>
-                <!-- Tambahkan atribut data-label="NAMA KATEGORI" untuk label di Mobile -->
                 <tr>
                   <td class="td-category text-center align-middle" data-label="GAME">
                     <i class="fas fa-gamepad text-blue-bell category-icon-large" title="Game"></i>
@@ -831,7 +818,7 @@
     </section>
 
     <!-- ======================================================================== -->
-    <!-- UPCOMING CONTENT SHOWCASE SECTION (FIX MOBILE 2 COLUMNS) -->
+    <!-- UPCOMING CONTENT SHOWCASE SECTION -->
     <!-- ======================================================================== -->
     <section id="meowtiverse-showcase" class="presentation-section">
       <div class="container">
@@ -864,7 +851,6 @@
           </button>
         </div>
 
-        <!-- PERHATIKAN: col-12 sudah saya ubah jadi col-6 agar di HP berjejer 2 -->
         <!-- KATEGORI: MEOWTIVERSE RETRO -->
         <div class="meow-showcase-grid-panel active" id="showcase-retro">
           <div class="row g-2 g-md-4 justify-content-center">
@@ -1087,7 +1073,7 @@
               <div class="col-md-5">
                 <div class="creator-sub-card">
                   <div class="d-flex align-items-center gap-3 mb-3">
-                    <img src="asets/746824337_17959832703166929_2764113740104885389_n.jpg" alt="Foto Profil Waffle" class="creator-avatar-circle">
+                    <img src="asets/Waffle.jpg" alt="Foto Profil Waffle" class="creator-avatar-circle">
                     <div>
                       <span class="badge bg-primary px-3 py-1 mb-1">Comic Strip Artist</span>
                       <h3 class="text-navy fw-bold mb-0">Waffle</h3>
@@ -1180,7 +1166,7 @@
               <div class="col-md-5">
                 <div class="creator-sub-card">
                   <div class="d-flex align-items-center gap-3 mb-3">
-                    <img src="asets/icon_front.png" alt="Foto Profil Rao" class="creator-avatar-circle">
+                    <img src="asets/Rao.png" alt="Foto Profil Rao" class="creator-avatar-circle">
                     <div>
                       <span class="badge bg-primary px-3 py-1 mb-1">Logo & Banner Artist</span>
                       <h3 class="text-navy fw-bold mb-0">Rao</h3>
@@ -1207,7 +1193,7 @@
               <div class="col-md-5">
                 <div class="creator-sub-card">
                   <div class="d-flex align-items-center gap-3 mb-3">
-                    <img src="asets/575299663_18023046536717207_5712972908330561620_n.jpg" alt="Foto Profil riielism" class="creator-avatar-circle">
+                    <img src="asets/Riielism.jpg" alt="Foto Profil riielism" class="creator-avatar-circle">
                     <div>
                       <span class="badge bg-primary px-3 py-1 mb-1">Transitions Designer</span>
                       <h3 class="text-navy fw-bold mb-0">riielism</h3>
@@ -1297,7 +1283,7 @@
               <div class="col-md-4">
                 <div class="creator-sub-card">
                   <div class="d-flex align-items-center gap-3 mb-3">
-                    <img src="https://instagram.fbdo9-1.fna.fbcdn.net/v/t51.82787-19/764693295_18276310816293275_5930061241379913515_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4zMzAuQzMifQ%3D%3D&_nc_ohc=RjawiL51neUQ7kNvwGuMDfm&_nc_oc=Adp8A7PIaWbyOCuc7mZnCHsLWfX7yjVFLy_01oOLfW_0qpxsiCXVE0Bz-q1YzgXFk3o&_nc_zt=24&_nc_ht=instagram.fbdo9-1.fna&_nc_gid=vQRKOVDMMMFpBGd6xtVJ5A&_nc_ss=7b2a8&oh=00_AQMWo7PwchtduchCPXOEL0o1iA8kP159mjGpTUM8xIxgwA&oe=6AC60EA6" alt="Foto Profil Monge Machiro" class="creator-avatar-circle">
+                    <img src="asets/monge.png" alt="Foto Profil Monge Machiro" class="creator-avatar-circle">
                     <div>
                       <span class="badge bg-primary px-3 py-1 mb-1">Layout Designer</span>
                       <h3 class="text-navy fw-bold mb-0">Monge Machiro</h3>
@@ -1369,7 +1355,7 @@
               <div class="col-md-4">
                 <div class="creator-sub-card">
                   <div class="d-flex align-items-center gap-3 mb-3">
-                    <img src="asets/icon_front.png" alt="Foto Profil Rao" class="creator-avatar-circle">
+                    <img src="asets/Rao.png" alt="Foto Profil Rao" class="creator-avatar-circle">
                     <div>
                       <span class="badge bg-primary px-3 py-1 mb-1">Creative Consultant</span>
                       <h3 class="text-navy fw-bold mb-0">Rao</h3>
@@ -1387,7 +1373,7 @@
               <div class="col-md-4">
                 <div class="creator-sub-card">
                   <div class="d-flex align-items-center gap-3 mb-3">
-                    <img src="asets/bnuyy.png" alt="Foto Profil Shun" class="creator-avatar-circle">
+                    <img src="asets/shun.png" alt="Foto Profil Shun" class="creator-avatar-circle">
                     <div>
                       <span class="badge bg-primary px-3 py-1 mb-1">Creative Consultant</span>
                       <h3 class="text-navy fw-bold mb-0">Shun</h3>
@@ -1415,7 +1401,7 @@
                 <div class="creator-sub-card">
                   <div>
                     <div class="d-flex align-items-center gap-3 mb-3">
-                      <img src="asets/NS1gLF7T_400x400.jpg" alt="Steven Racoon" class="creator-avatar-circle">
+                      <img src="asets/Steven Racoon.jpg" alt="Steven Racoon" class="creator-avatar-circle">
                       <div>
                         <span class="badge bg-primary px-3 py-1 mb-1">MC Opening</span>
                         <h3 class="text-navy fw-bold mb-0 fs-5">Steven Racoon</h3>
@@ -1432,7 +1418,7 @@
                 <div class="creator-sub-card">
                   <div>
                     <div class="d-flex align-items-center gap-3 mb-3">
-                      <img src="asets/1nIVsl5V_400x400.jpg" alt="Neiva" class="creator-avatar-circle">
+                      <img src="asets/Neiva.png" alt="Neiva" class="creator-avatar-circle">
                       <div>
                         <span class="badge bg-primary px-3 py-1 mb-1">Lore Voice Actor</span>
                         <h3 class="text-navy fw-bold mb-0 fs-5">Neiva</h3>
@@ -1662,7 +1648,8 @@
     <!-- ======================================================================== -->
     <section id="the-end" class="presentation-section">
       <div class="the-end-bg-container">
-        <img src="asets/ucufwsv2.png" alt="The End Background Image" class="the-end-bg-img" id="theEndBgImg">
+        <!-- BACKGROUND SUDAH DIGANTI MENJADI END.png -->
+        <img src="asets/END.png" alt="The End Background Image" class="the-end-bg-img" id="theEndBgImg">
         <div class="the-end-overlay"></div>
       </div>
       <div class="container the-end-content-wrapper text-center">
@@ -1678,15 +1665,15 @@
   <!-- FOOTER SECTION -->
   <!-- ========================================================================== -->
   <footer class="fixed-bottom glass-footer py-2">
-    <div class="container-fluid px-3 px-md-4 d-flex align-items-center justify-content-between flex-wrap">
-      <div class="d-flex align-items-center gap-2 social-icon-group">
+    <!-- FLEX BERUBAH MENJADI JUSTIFY-CONTENT-CENTER -->
+    <div class="container-fluid px-3 px-md-4 d-flex align-items-center justify-content-center flex-wrap">
+      <div class="d-flex align-items-center justify-content-center gap-2 social-icon-group w-100">
         <a href="#" target="_blank" class="social-link" title="Discord"><i class="fab fa-discord"></i></a>
         <a href="#" target="_blank" class="social-link" title="Twitch"><i class="fab fa-twitch"></i></a>
         <a href="#" target="_blank" class="social-link" title="TikTok"><i class="fab fa-tiktok"></i></a>
         <a href="#" target="_blank" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
         <a href="#" target="_blank" class="social-link" title="Facebook"><i class="fab fa-facebook"></i></a>
         <a href="#" target="_blank" class="social-link" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
-        <span class="d-none d-lg-inline ms-2 text-secondary">&copy; 2026 rucusmeowtiverse. All Rights Reserved</span>
       </div>
     </div>
   </footer>
