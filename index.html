@@ -67,9 +67,9 @@
     .glow-text-rose { text-shadow: 0 4px 15px rgba(255, 197, 199, 0.6); }
     .glow-text-gold { text-shadow: 0 4px 15px rgba(247, 227, 159, 0.6); }
 
-    .hero-logo-wrapper { max-width: 800px; width: 100%; margin: 0 auto; display: flex; justify-content: center; align-items: center; transition: transform 0.3s ease; }
-    .hero-logo-wrapper:hover { transform: scale(1.05); }
-    .hero-logo-img { max-width: 100%; height: auto; object-fit: contain; filter: drop-shadow(0 4px 12px rgba(63, 142, 198, 0.25)); }
+    .hero--wrapper { max-width: 800px; width: 100%; margin: 0 auto; display: flex; justify-content: center; align-items: center; transition: transform 0.3s ease; }
+    .hero--wrapper:hover { transform: scale(1.05); }
+    .hero--img { max-width: 100%; height: auto; object-fit: contain; filter: drop-shadow(0 4px 12px rgba(63, 142, 198, 0.25)); }
 
     .glass-card { background: var(--glass-card-bg); border: 1.5px solid var(--glass-card-border); border-radius: 24px; box-shadow: var(--shadow-fluffy); transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; }
     .glass-card:hover { border-color: var(--c-blue-bell); box-shadow: var(--shadow-hover); }
@@ -264,18 +264,19 @@
 
 <body>
 
-  <!-- ========================================================================== -->
+<!-- ========================================================================== -->
   <!-- HEADER SECTION -->
   <!-- ========================================================================== -->
   <header class="navbar navbar-expand fixed-top glass-header py-2">
-    <div class="container-fluid px-3 px-md-4 d-flex align-items-center">
-      <!-- LOGO -->
-      <a class="navbar-brand d-flex align-items-center gap-2" href="#welcome">
+    <div class="container-fluid px-3 px-md-4 d-flex align-items-center justify-content-start">
+      
+      <!-- LOGO (Badge di posisi paling kiri) -->
+      <a class="navbar-brand d-flex align-items-center m-0 p-0" href="#welcome">
         <img src="asets/ShinyBadges.png" alt="Logo Live Rucus" id="liveRucusLogo" class="header-logo">
       </a>
 
-      <!-- SUPPORT TICKER -->
-      <div class="marquee-container ms-3 d-none d-md-block flex-grow-1">
+      <!-- SUPPORT TICKER (Saweria berjalan di sebelahnya) -->
+      <div class="marquee-container ms-4 d-none d-md-block" style="width: 400px;">
         <div class="marquee-content">
           <span class="support-badge"><i class="fas fa-heart text-danger me-1"></i> Support Platforms:</span>
           <a href="https://saweria.co/RucusLiveId" target="_blank" class="support-item"><i class="fas fa-donate me-1"></i> Saweria</a>
@@ -285,13 +286,14 @@
           <a href="https://sociabuzz.com/rucusliveid/support" target="_blank" class="support-item"><i class="fas fa-bolt me-1"></i> SociaBuzz</a>
         </div>
       </div>
+
     </div>
     <!-- Scroll Progress -->
     <div class="scroll-progress-container">
       <div class="scroll-progress-bar" id="scrollProgressBar"></div>
     </div>
   </header>
-
+  
   <main id="mainPresentationContainer">
 
     <section id="welcome" class="presentation-section">
