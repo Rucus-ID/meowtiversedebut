@@ -1048,60 +1048,154 @@
             </div>
           </div>
 
-          <div class="glass-card p-4 mb-4 creator-card-full active" id="creatorCard11">
+         <div class="glass-card p-4 mb-4 creator-card-full active" id="creatorCard11">
             <div class="d-flex align-items-center justify-content-between mb-4 pb-2 border-bottom border-secondary border-opacity-25">
               <div class="d-flex align-items-center gap-2">
                 <i class="fa-solid fa-layer-group text-blue-bell fs-4"></i>
                 <h4 class="text-navy fw-bold mb-0">Layout & Assets Design</h4>
               </div>
+
+              <!-- Tombol Slide Khusus Tampilan HP -->
+              <div class="d-flex gap-2 d-md-none">
+                <button class="btn btn-sm rounded-circle d-flex align-items-center justify-content-center" type="button" data-bs-target="#layoutAssetsCarousel" data-bs-slide="prev" style="width: 32px; height: 32px; background: var(--c-pale-sky); border: 1px solid var(--c-blue-bell); color: var(--c-blue-bell);">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="btn btn-sm rounded-circle d-flex align-items-center justify-content-center" type="button" data-bs-target="#layoutAssetsCarousel" data-bs-slide="next" style="width: 32px; height: 32px; background: var(--c-pale-sky); border: 1px solid var(--c-blue-bell); color: var(--c-blue-bell);">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
             </div>
-            <div class="row gy-4 align-items-center">
-              <div class="col-md-4">
-                <div class="creator-sub-card">
+
+            <!-- Tampilan PC / Laptop (4 Kolom Sejajar) -->
+            <div class="row gy-4 align-items-stretch d-none d-md-flex">
+              <div class="col-lg-3 col-md-6">
+                <div class="creator-sub-card h-100">
                   <div class="d-flex align-items-center gap-3 mb-3">
-                    <img src="https://pbs.twimg.com/profile_images/1986674820835385350/YkGglRhU_400x400.jpg" alt="Foto Profil NotJirou01" class="creator-avatar-circle">
+                    <img src="https://pbs.twimg.com/profile_images/1986674820835385350/YkGglRhU_400x400.jpg" alt="Foto Profil NotJirou01" class="creator-avatar-circle" style="width: 60px; height: 60px;">
                     <div>
-                      <span class="badge bg-primary px-3 py-1 mb-1">Layout & Assets Designer</span>
-                      <h3 class="text-navy fw-bold mb-0">NotJirou01</h3>
+                      <span class="badge bg-primary px-2 py-1 mb-1" style="font-size: 0.65rem;">Layout & Assets</span>
+                      <h3 class="text-navy fw-bold mb-0 fs-6">NotJirou01</h3>
                     </div>
                   </div>
-                  <p class="text-sub-navy fs-6 mb-4">I draw OCs, fanart, and other artwork.</p>
-                  <a href="https://x.com/NotJirou01" target="_blank" class="btn-social btn-social-x w-100">
+                  <p class="text-sub-navy fs-7 mb-4">I draw OCs, fanart, and other artwork.</p>
+                  <a href="https://x.com/NotJirou01" target="_blank" class="btn-social btn-social-x w-100 mt-auto py-2 fs-7">
                     <i class="fa-brands fa-x-twitter"></i> @NotJirou01
                   </a>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="creator-sub-card">
+              <div class="col-lg-3 col-md-6">
+                <div class="creator-sub-card h-100">
                   <div class="d-flex align-items-center gap-3 mb-3">
-                    <img src="fin/monge.jpg" alt="Foto Profil Monge Machiro" class="creator-avatar-circle">
+                    <img src="fin/monge.jpg" alt="Foto Profil Monge Machiro" class="creator-avatar-circle" style="width: 60px; height: 60px;">
                     <div>
-                      <span class="badge bg-primary px-3 py-1 mb-1">Layout Designer</span>
-                      <h3 class="text-navy fw-bold mb-0">Monge Machiro</h3>
+                      <span class="badge bg-primary px-2 py-1 mb-1" style="font-size: 0.65rem;">Layout Designer</span>
+                      <h3 class="text-navy fw-bold mb-0 fs-6">Monge Machiro</h3>
                     </div>
                   </div>
-                  <p class="text-sub-navy fs-6 mb-4">🇬🇧/🇮🇩 Your friendly rat boy 🐭 Love doing something FUN 🌟 Not lazy just save soul 💤️ Spends time & money for gaming 🎮</p>
-                  <a href="https://www.instagram.com/monge_machiro/" target="_blank" class="btn-social btn-social-instagram w-100">
+                  <p class="text-sub-navy fs-7 mb-4">🇬🇧/🇮🇩 Your friendly rat boy 🐭 Love doing something FUN 🌟</p>
+                  <a href="https://www.instagram.com/monge_machiro/" target="_blank" class="btn-social btn-social-instagram w-100 mt-auto py-2 fs-7">
                     <i class="fa-brands fa-instagram"></i> @monge_machiro
                   </a>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="creator-sub-card">
+              <div class="col-lg-3 col-md-6">
+                <div class="creator-sub-card h-100">
                   <div class="d-flex align-items-center gap-3 mb-3">
-                    <img src="https://pbs.twimg.com/profile_images/2037769504743370752/mFs-bTxy_400x400.jpg" alt="Foto Profil Xei Yume" class="creator-avatar-circle">
+                    <img src="https://pbs.twimg.com/profile_images/2037769504743370752/mFs-bTxy_400x400.jpg" alt="Foto Profil Xei Yume" class="creator-avatar-circle" style="width: 60px; height: 60px;">
                     <div>
-                      <span class="badge bg-primary px-3 py-1 mb-1">Assets Designer</span>
-                      <h3 class="text-navy fw-bold mb-0">Xei Yume</h3>
+                      <span class="badge bg-primary px-2 py-1 mb-1" style="font-size: 0.65rem;">Assets Designer</span>
+                      <h3 class="text-navy fw-bold mb-0 fs-6">Xei Yume</h3>
                     </div>
                   </div>
-                  <p class="text-sub-navy fs-6 mb-4">🎨 UI/UX wrangler | Graphic designer of vibes ✨ | Game dev… but only when coffee allows ☕| 📩 Open Commissions Overlay and Chat Widget</p>
-                  <a href="https://x.com/xeitokz" target="_blank" class="btn-social btn-social-x w-100">
+                  <p class="text-sub-navy fs-7 mb-4">🎨 UI/UX wrangler | Graphic designer of vibes ✨</p>
+                  <a href="https://x.com/xeitokz" target="_blank" class="btn-social btn-social-x w-100 mt-auto py-2 fs-7">
                     <i class="fa-brands fa-x-twitter"></i> @xeitokz
                   </a>
                 </div>
               </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="creator-sub-card h-100">
+                  <div class="d-flex align-items-center gap-3 mb-3">
+                    <img src="fin/Riielism.jpg" alt="Foto Profil riielism" class="creator-avatar-circle" style="width: 60px; height: 60px;">
+                    <div>
+                      <span class="badge bg-primary px-2 py-1 mb-1" style="font-size: 0.65rem;">Transitions Designer</span>
+                      <h3 class="text-navy fw-bold mb-0 fs-6">riielism</h3>
+                    </div>
+                  </div>
+                  <p class="text-sub-navy fs-7 mb-4">ril</p>
+                  <a href="https://www.instagram.com/riielism/" target="_blank" class="btn-social btn-social-instagram w-100 mt-auto py-2 fs-7">
+                    <i class="fa-brands fa-instagram"></i> @riielism
+                  </a>
+                </div>
+              </div>
             </div>
+
+            <!-- Tampilan Mobile (Carousel Slide dengan Tombol Panah di Atas) -->
+            <div id="layoutAssetsCarousel" class="carousel slide d-md-none" data-bs-ride="carousel">
+              <div class="carousel-inner pb-2">
+                <div class="carousel-item active">
+                  <div class="creator-sub-card h-100">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                      <img src="https://pbs.twimg.com/profile_images/1986674820835385350/YkGglRhU_400x400.jpg" alt="Foto Profil NotJirou01" class="creator-avatar-circle">
+                      <div>
+                        <span class="badge bg-primary px-3 py-1 mb-1">Layout & Assets</span>
+                        <h3 class="text-navy fw-bold mb-0 fs-5">NotJirou01</h3>
+                      </div>
+                    </div>
+                    <p class="text-sub-navy fs-6 mb-4">I draw OCs, fanart, and other artwork.</p>
+                    <a href="https://x.com/NotJirou01" target="_blank" class="btn-social btn-social-x w-100 mt-auto">
+                      <i class="fa-brands fa-x-twitter"></i> @NotJirou01
+                    </a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="creator-sub-card h-100">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                      <img src="fin/monge.jpg" alt="Foto Profil Monge Machiro" class="creator-avatar-circle">
+                      <div>
+                        <span class="badge bg-primary px-3 py-1 mb-1">Layout Designer</span>
+                        <h3 class="text-navy fw-bold mb-0 fs-5">Monge Machiro</h3>
+                      </div>
+                    </div>
+                    <p class="text-sub-navy fs-6 mb-4">🇬🇧/🇮🇩 Your friendly rat boy 🐭 Love doing something FUN 🌟</p>
+                    <a href="https://www.instagram.com/monge_machiro/" target="_blank" class="btn-social btn-social-instagram w-100 mt-auto">
+                      <i class="fa-brands fa-instagram"></i> @monge_machiro
+                    </a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="creator-sub-card h-100">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                      <img src="https://pbs.twimg.com/profile_images/2037769504743370752/mFs-bTxy_400x400.jpg" alt="Foto Profil Xei Yume" class="creator-avatar-circle">
+                      <div>
+                        <span class="badge bg-primary px-3 py-1 mb-1">Assets Designer</span>
+                        <h3 class="text-navy fw-bold mb-0 fs-5">Xei Yume</h3>
+                      </div>
+                    </div>
+                    <p class="text-sub-navy fs-6 mb-4">🎨 UI/UX wrangler | Graphic designer of vibes ✨</p>
+                    <a href="https://x.com/xeitokz" target="_blank" class="btn-social btn-social-x w-100 mt-auto">
+                      <i class="fa-brands fa-x-twitter"></i> @xeitokz
+                    </a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="creator-sub-card h-100">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                      <img src="fin/Riielism.jpg" alt="Foto Profil riielism" class="creator-avatar-circle">
+                      <div>
+                        <span class="badge bg-primary px-3 py-1 mb-1">Transitions Designer</span>
+                        <h3 class="text-navy fw-bold mb-0 fs-5">riielism</h3>
+                      </div>
+                    </div>
+                    <p class="text-sub-navy fs-6 mb-4">ril</p>
+                    <a href="https://www.instagram.com/riielism/" target="_blank" class="btn-social btn-social-instagram w-100 mt-auto">
+                      <i class="fa-brands fa-instagram"></i> @riielism
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
 
           <div class="glass-card p-4 mb-4 creator-card-full active" id="creatorCard13">
