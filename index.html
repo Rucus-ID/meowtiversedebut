@@ -111,17 +111,32 @@
     .hero-video-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 50% 50%, rgba(244, 249, 253, 0.4) 0%, rgba(230, 243, 250, 0.85) 100%); z-index: 1; }
     .hero-content-wrapper { position: relative; z-index: 2; }
 
-    /* --- TAMBAHKAN KODE INI --- */
+    /* --- KODE POSISI & UKURAN LOGO RUCUS ID --- */
+    /* Mengatur posisi turun ke pinggang */
     .hero-logo-wrapper {
       transform: translateY(180px); 
     }
 
+    /* Mengatur ukuran logo */
+    .hero-logo-img {
+      max-width: 500px; /* Ukuran PC/Laptop */
+      width: 100%;
+      height: auto;
+      transition: all 0.3s ease;
+    }
+
+    /* Penyesuaian khusus saat dibuka di HP */
     @media (max-width: 767.98px) {
       .hero-logo-wrapper {
-        transform: translateY(80px); /* Penyesuaian untuk tampilan HP */
+        transform: translateY(80px); /* Posisi di HP */
+      }
+      .hero-logo-img {
+        max-width: 300px; /* Ukuran di HP */
       }
     }
-    /* ------------------------ */
+    /* ------------------------------------------ */
+
+    .giant-typography { font-family: 'Syne', 'Orbitron', sans-serif; font-weight: 900; /* ... kode Anda selanjutnya ... */ }
 
     .giant-typography { font-family: 'Syne', 'Orbitron', sans-serif; font-weight: 900; /* ... kode Anda selanjutnya ... */ }
     .giant-typography { font-family: 'Syne', 'Orbitron', sans-serif; font-weight: 900; font-size: clamp(3.2rem, 9.5vw, 7.5rem); line-height: 0.95; letter-spacing: -2px; text-transform: uppercase; background: linear-gradient(135deg, #0c2340 0%, var(--c-blue-bell) 45%, var(--c-steel-blue) 75%, #b38500 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 20px; text-shadow: 0 10px 30px rgba(63, 142, 198, 0.2); }
